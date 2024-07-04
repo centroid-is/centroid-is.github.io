@@ -3,25 +3,25 @@ id: "services"
 
 content:
   title: "Our main services"
-  text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec quam nibh elit pellentesque velit netus suspendisse. Sed enim, pretium, montes, in ut dolor urna."
+  text: "We specialize in delivering comprehensive services tailored to a wide range of industrial applications, we can help you with your automation needs."
   cards:
-    - image: "images/services-web-development.png"
-      title: "Web development"
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie in malesuada eget fames purus ligula luctus tellus. Habitant condimentum sit gravida praesent. "
+    - image: "images/ethernet-cables.jpg"
+      title: "PLC Programming"
+      text: "With over five years of experience, proficient in programming and troubleshooting PLCs with various I/O communication protocols, including ModBus, EthernetIP, EtherCat, and CANOpen."
       button:
         label: "Learn more"
         url: "#"
 
-    - image: "images/services-web-development.png"
-      title: "Web development"
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie in malesuada eget fames purus ligula luctus tellus. Habitant condimentum sit gravida praesent. "
+    - image: "images/complexautomation.jpg"
+      title: "Complex Automation"
+      text: "With great insights to the latest technologies, we can help you with your automation needs, from simple to complex systems."
       button:
         label: "Learn more"
         url: "#"
 
-    - image: "images/services-web-development.png"
-      title: "Web development"
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie in malesuada eget fames purus ligula luctus tellus. Habitant condimentum sit gravida praesent. "
+    - image: "images/flutter.png"
+      title: "HMI Development"
+      text: "We can design and develop HMIs for your current or future projects, with a focus on user experience and ease of use."
       button:
         label: "Learn more"
         url: "#"
