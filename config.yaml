@@ -31,9 +31,7 @@ params:
     - "Reykjavík, Iceland"
 
   contact:
-    - "arni@centroid.is"
-    - "jon@centroid.is"
-    - "omar@centroid.is"
+    - "centroid@centroid.is"
 
   copyright: "© 2024 Centroid All Rights Reserved"
 
@@ -55,13 +53,13 @@ menus:
     #   url: "/#"
     #   weight: 4
 
-    - name: "Blog"
-      url: "/blog"
-      weight: 5
+    # - name: "Blog"
+    #   url: "/blog"
+    #   weight: 5
 
   buttons:
-    - name: "Book a call"
-      url: "/#"
+    - name: "Contact us"
+      url: "mailto: centroid@centroid.is"
       weight: 5
       pre: "btn btn-primary text-light"
 
