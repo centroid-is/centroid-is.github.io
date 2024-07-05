@@ -31,7 +31,9 @@ params:
     - "Reykjavík, Iceland"
 
   contact:
-    - "centroid@centroid.is"
+    - "arni@centroid.is"
+    - "jon@centroid.is"
+    - "omar@centroid.is"
 
   copyright: "© 2024 Centroid All Rights Reserved"
 
