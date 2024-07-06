@@ -7,9 +7,9 @@ content:
 
   buttonPrimary:
     label: "What we do"
-    url: "#"
+    url: "#services"
 
   buttonSecondary:
     label: "Let's talk"
-    url: ""
+    url: "mailto: centroid@centroid.is"
 

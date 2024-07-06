@@ -1,5 +1,5 @@
 baseURL: "https://centroid-is.github.io/"
-theme: "up-business-theme"
+theme: "centroid-theme"
 languageCode: "en-us"
 
 title: "Centroid"
@@ -53,27 +53,27 @@ menus:
     #   url: "/#"
     #   weight: 4
 
-    - name: "Blog"
-      url: "/blog"
-      weight: 5
+    # - name: "Blog"
+    #   url: "/blog"
+    #   weight: 5
 
   buttons:
-    - name: "Book a call"
-      url: "/#"
+    - name: "Contact us"
+      url: "mailto: centroid@centroid.is"
       weight: 5
       pre: "btn btn-primary text-light"
 
   footer:
-    - name: "Home"
-      url: "/#hero"
-      weight: 1
+    # - name: "Home"
+    #   url: "/#hero"
+    #   weight: 1
 
     # - name: "How we work"
     #   url: "/#"
     #   weight: 2
 
     - name: "Our team"
-      url: "/#"
+      url: "/team"
       weight: 3
 
     # - name: "Pricing"

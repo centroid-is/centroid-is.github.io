@@ -2,6 +2,7 @@ enabled: true
 id: "services"
 
 content:
+  id: "services"
   title: "Our main services"
   text: "We specialize in delivering comprehensive services tailored to a wide range of industrial applications, we can help you with your automation needs."
   cards:
