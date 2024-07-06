@@ -2,7 +2,9 @@
   <div class="container">
     <a class="navbar-brand d-flex align-items-center" href="{{ .Site.BaseURL }}">
 	    <!--{{ partial "utilities/image.html" "images/text_right_logo.png" }}-->
-  		<img class="img-fluid" src="/images/text_right_logo.svg" alt="{{ .Title }}">
+	    {{ with resources.Get "images/text_right_logo.png" }}
+  		<img class="img-fluid" src="/images/text_right_logo.png" alt="LOGO">
+	    {{ end }}
 	<!--<span class="fs-3 fw-semibold text-uppercase text-primary">{{ .Site.Title }}</span>-->
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
