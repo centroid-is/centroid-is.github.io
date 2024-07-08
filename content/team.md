@@ -7,24 +7,26 @@ author = "Hugo Authors"
 +++
 
 {{< container >}}
-
 {{< member 
     image="images/ethernet-cables.jpg"
-    title="Foo"
-    text="Something about foo"
-    linkedin="https://www.linkedin.com/in/foobar"
-/>}}
-
+    title="Árni Þorvaldsson"
+    text="MSc Signal, Systems and Mechatronic"
+    linkedin="https://www.linkedin.com/in/arnit"
+\ >}}
 {{< member 
     image="images/ethernet-cables.jpg"
-    title="Bar"
-    text="Something about bar"
-    linkedin="https://www.linkedin.com/in/foobar"
-/>}}
-
+    title="Jón Bjarni Bjarnason"
+    text="MSc Electrical and Computer Engineering"
+    linkedin="https://www.linkedin.com/in/jon-bjarni"
+\ >}}
+{{< member 
+    image="images/ethernet-cables.jpg"
+    title="Ómar Högni Guðmarsson"
+    text="BSc Computer science"
+    linkedin="https://www.linkedin.com/in/%C3%B3mar-h%C3%B6gni-gu%C3%B0marsson-aa0aa4245/"
+\ >}}
 {{< /container >}}
 
-
-Our team has an extensive background in industrial solutions
-our members have worked for some of the biggest Icelandic
+Our team has an extensive background in industrial solutions,
+and our members have worked for some of the biggest Icelandic
 machine builders.
