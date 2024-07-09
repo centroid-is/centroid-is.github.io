@@ -23,7 +23,7 @@ author = "Hugo Authors"
     image="images/omar_bw.jpg"
     title="Ómar Högni Guðmarsson"
     text="BSc Computer science"
-    linkedin="https://www.linkedin.com/in/%C3%B3mar-h%C3%B6gni-gu%C3%B0marsson-aa0aa4245/"
+    linkedin="https://www.linkedin.com/in/omarhogni"
 \ >}}
 {{< /container >}}
 
