@@ -1,0 +1,23 @@
+{{/*  <section class="section member py-5">  */}}
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+  <div class="col-12 col-xl-4">
+    <div class="card bg-secondary-16 border-0 border-radius-34 p-4">
+      {{ $image := .Get "image" }}
+      {{ with resources.Get $image }}
+      <img src="{{ .RelPermalink }}" class="img-fluid rounded mb-3" alt="Member Image">
+      {{ end }}
+      <div class="card-body text-center">
+        {{ with .Get "title" }}<h4 class="card-title text-center text-primary pb-4">{{ . }}</h4>{{ end }}
+        {{ with .Get "text" }}<p class="card-text text-black-61 pb-4">{{ . }}</p>{{ end }}
+        {{ with .Get "button" }}
+        <a class="btn btn-outline-primary mb-2" href="{{ .url }}">{{ .label }}</a>
+        {{ end }}
+        {{ with .Get "linkedin" }}
+        <a href="{{ . }}" target="_blank" class="d-block mt-3">
+          <i class="fab fa-linkedin fa-2x"></i>
+        </a>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+{{/*  </section>  */}}
