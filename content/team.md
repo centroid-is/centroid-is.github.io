@@ -8,19 +8,19 @@ author = "Hugo Authors"
 
 {{< container >}}
 {{< member 
-    image="images/ethernet-cables.jpg"
+    image="images/arni_bw.jpg"
     title="Árni Þorvaldsson"
     text="MSc Signal, Systems and Mechatronic"
     linkedin="https://www.linkedin.com/in/arnit"
 \ >}}
 {{< member 
-    image="images/ethernet-cables.jpg"
+    image="images/jon_bw.jpg"
     title="Jón Bjarni Bjarnason"
     text="MSc Electrical and Computer Engineering"
     linkedin="https://www.linkedin.com/in/jon-bjarni"
 \ >}}
 {{< member 
-    image="images/ethernet-cables.jpg"
+    image="images/omar_bw.jpg"
     title="Ómar Högni Guðmarsson"
     text="BSc Computer science"
     linkedin="https://www.linkedin.com/in/%C3%B3mar-h%C3%B6gni-gu%C3%B0marsson-aa0aa4245/"
