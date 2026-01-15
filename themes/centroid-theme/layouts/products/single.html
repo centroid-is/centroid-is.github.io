@@ -1,0 +1,64 @@
+{{ define "main" }}
+  <section class="section product-single py-5">
+    <div class="container">
+      <div class="row pb-5">
+        <!-- Product Image -->
+        <div class="col-12 col-lg-6 mb-4 mb-lg-0">
+          {{ with .Params.image }}
+          <div class="product-image-single bg-secondary-16 border-radius-34 p-4">
+            {{ with resources.Get . }}
+            <img src="{{ .RelPermalink }}" class="img-fluid rounded" alt="Product Image">
+            {{ end }}
+          </div>
+          {{ end }}
+        </div>
+
+        <!-- Product Info -->
+        <div class="col-12 col-lg-6">
+          <h1 class="display-4 fw-bold text-primary mb-3">{{ .Title }}</h1>
+
+          {{ with .Params.model }}
+          <p class="text-muted fs-5 mb-3">Model: {{ . }}</p>
+          {{ end }}
+
+          {{ with .Params.price }}
+          <p class="display-5 fw-bold text-primary mb-4">{{ . }}</p>
+          {{ end }}
+
+          <div class="product-description text-black-61 fs-5 mb-4">
+            {{ .Content }}
+          </div>
+
+          <!-- Specs Table -->
+          {{ with .Params.specs }}
+          <div class="specs-table bg-secondary-16 border-radius-34 p-4 mb-4">
+            <h5 class="fw-bold text-primary mb-3">Specifications</h5>
+            <table class="table table-borderless mb-0">
+              <tbody>
+                {{ range $key, $value := . }}
+                <tr>
+                  <td class="text-black-61 fw-semibold" style="width: 40%">{{ $key }}</td>
+                  <td class="text-black-61">{{ $value }}</td>
+                </tr>
+                {{ end }}
+              </tbody>
+            </table>
+          </div>
+          {{ end }}
+
+          <!-- Order Button -->
+          {{ $subject := printf "Order Inquiry: %s" .Title }}
+          {{ $body := printf "I would like to order:\n\nProduct: %s\nModel: %s\nPrice: %s\n\n---\nMy details:\nName: \nCompany: \nPhone: \nQuantity: \n\nAdditional notes:\n" .Title .Params.model .Params.price }}
+          <a href="mailto:{{ index site.Params.contact 0 }}?subject={{ $subject | urlquery }}&body={{ $body | urlquery }}" class="btn btn-primary btn-lg px-5 py-3">
+            Order Now
+            {{ partial "icons/arrow-right.html" }}
+          </a>
+
+          <a href="/products" class="btn btn-outline-primary btn-lg px-5 py-3 ms-2">
+            Back to Products
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+{{ end }}

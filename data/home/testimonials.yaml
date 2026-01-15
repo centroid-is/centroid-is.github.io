@@ -1,26 +1,20 @@
-# enabled: true
-# id: "testimonials"
+enabled: true
+id: "testimonials"
 
-# content:
-#   title: "Testimonials"
+content:
+  title: "What Our Clients Say"
 
-#   featured:
-#     image: "images/testimonials-awards.png"
-#     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur et pretium nunc, quis euismod et. Volutpat suspendisse sed in blandit condimentum. Sagittis nullam nec mauris, feugiat hendrerit aliquam cras. Dolor tortor gravida lobortis in ultricies enim vulputate non. Neque nibh donec quam lectus."
-#     client: "Anonymous Customer"
+  featured:
+    image: "images/testimonials-featured.jpg"
+    text: "Centroid transformed our production facility. Their deep understanding of industrial automation combined with their innovative approach to HMI design gave us a system that our operators actually enjoy using. The ROI was evident within the first quarter."
+    client: "Production Manager, Icelandic Seafood Company"
 
-#   list:
-#     - text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur et pretium nunc, quis euismod et. Volutpat suspendisse sed in blandit condimentum. Sagittis nullam nec mauris, feugiat hendrerit aliquam cras. Dolor tortor gravida lobortis in ultricies enim vulputate non. Neque nibh donec quam lectus."
-#       client: "Anonymous Customer"
+  list:
+    - text: "Professional, knowledgeable, and delivered on time. The PLC programming work exceeded our expectations, and their documentation was thorough."
+      client: "Plant Engineer, Nordic Manufacturing"
 
-#     - text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur et pretium nunc, quis euismod et. Volutpat suspendisse sed in blandit condimentum. Sagittis nullam nec mauris, feugiat hendrerit aliquam cras. Dolor tortor gravida lobortis in ultricies enim vulputate non. Neque nibh donec quam lectus."
-#       client: "Anonymous Customer"
+    - text: "We've worked with several automation firms, but Centroid stands out for their problem-solving ability. They don't just implement - they optimize."
+      client: "Technical Director, Energy Solutions Ltd"
 
-#     - text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur et pretium nunc, quis euismod et. Volutpat suspendisse sed in blandit condimentum. Sagittis nullam nec mauris, feugiat hendrerit aliquam cras. Dolor tortor gravida lobortis in ultricies enim vulputate non. Neque nibh donec quam lectus."
-#       client: "Anonymous Customer"
-
-#     - text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur et pretium nunc, quis euismod et. Volutpat suspendisse sed in blandit condimentum. Sagittis nullam nec mauris, feugiat hendrerit aliquam cras. Dolor tortor gravida lobortis in ultricies enim vulputate non. Neque nibh donec quam lectus."
-#       client: "Anonymous Customer"
-
-#     - text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur et pretium nunc, quis euismod et. Volutpat suspendisse sed in blandit condimentum. Sagittis nullam nec mauris, feugiat hendrerit aliquam cras. Dolor tortor gravida lobortis in ultricies enim vulputate non. Neque nibh donec quam lectus."
-#       client: "Anonymous Customer"
+    - text: "The team at Centroid helped us modernize our legacy systems without disrupting production. Smooth transition and excellent support."
+      client: "Operations Manager, Food Processing Co"

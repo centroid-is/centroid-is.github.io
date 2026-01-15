@@ -6,23 +6,23 @@ content:
   title: "Our main services"
   text: "We specialize in delivering comprehensive services tailored to a wide range of industrial applications, we can help you with your automation needs."
   cards:
-    - image: "images/ethernet-cables.jpg"
+    - image: "images/plc_programming.jpg"
       title: "PLC Programming"
-      text: "With over five years of experience, proficient in programming and troubleshooting PLCs with various I/O communication protocols, including ModBus, EthernetIP, EtherCat, and CANOpen."
+      text: "Integrating multiple systems into one unified solution. With over ten years of experience, we program and troubleshoot PLC systems from Schneider Electric, B&R, Beckhoff, Codesys based."
       button:
         label: "Learn more"
         url: "#"
 
-    - image: "images/complexautomation.jpg"
-      title: "Complex Automation"
-      text: "With great insights to the latest technologies, we can help you with your automation needs, from simple to complex systems."
+    - image: "images/ai_intelligent_automation.png"
+      title: "AI intelligent automation"
+      text: "With great insights to the latest technologies, we deliver custom or off-the-shelf AI solutions. Such as our fish species grader that identifies 11 different species."
       button:
         label: "Learn more"
         url: "#"
 
     - image: "images/flutter.png"
       title: "HMI Development"
-      text: "We can design and develop HMIs for your current or future projects, with a focus on user experience and ease of use."
+      text: "We can design and develop HMIs for your current or future projects—including BMS (Building Management Systems)—with a strong focus on user experience and ease of use."
       button:
         label: "Learn more"
         url: "#"

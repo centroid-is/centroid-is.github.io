@@ -1,0 +1,20 @@
+enabled: true
+id: "products"
+
+content:
+  title: "Industrial PCs"
+  text: "High-performance computing solutions built for demanding industrial environments"
+  button:
+    label: "View All Products"
+    url: "/products"
+
+  featured:
+    - title: "IPC Compact 3000"
+      price: "€1,850"
+      description: "Entry-level industrial PC for basic automation"
+    - title: "IPC Performance 5000"
+      price: "€2,950"
+      description: "Mid-range powerhouse for demanding applications"
+    - title: "IPC Edge AI"
+      price: "€5,500"
+      description: "AI-accelerated computing at the edge"

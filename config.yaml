@@ -41,9 +41,9 @@ menus:
       url: "/#hero"
       weight: 1
 
-    # - name: "What we do"
-    #   url: "/#"
-    #   weight: 2
+    - name: "Products"
+      url: "/products"
+      weight: 2
 
     - name: "Our team"
       url: "/team"
@@ -64,13 +64,9 @@ menus:
       pre: "btn btn-primary text-light"
 
   footer:
-    # - name: "Home"
-    #   url: "/#hero"
-    #   weight: 1
-
-    # - name: "How we work"
-    #   url: "/#"
-    #   weight: 2
+    - name: "Products"
+      url: "/products"
+      weight: 1
 
     - name: "Our team"
       url: "/team"

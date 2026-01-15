@@ -2,6 +2,7 @@
 
 @import "fonts";
 @import "utilities";
+@import "animations";
 
 @import "header";
 @import "footer";
@@ -15,3 +16,5 @@
 
 @import "../sections/blog-list";
 @import "../sections/blog-single";
+@import "../sections/products";
+@import "../sections/products-showcase";

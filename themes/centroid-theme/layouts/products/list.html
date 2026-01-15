@@ -1,0 +1,49 @@
+{{ define "main" }}
+  <section class="section products-list py-5">
+    <div class="container">
+      <div class="row justify-content-center pb-5">
+        <div class="col-12 col-xl-8">
+          {{ with .Title }}
+            <h2 class="fs-1 fw-bold text-center text-primary pb-3">{{ . }}</h2>
+          {{ end }}
+          {{ with .Params.description }}
+            <p class="text-black-61 text-center pb-3 fs-5">{{ . }}</p>
+          {{ end }}
+        </div>
+      </div>
+      <div class="row g-4 pb-5">
+        {{ range .Pages }}
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 bg-secondary-16 border-0 border-radius-34 overflow-hidden product-card">
+            {{ with .Params.image }}
+            <div class="product-image-wrapper">
+              {{ with resources.Get . }}
+              <img src="{{ .RelPermalink }}" class="card-img-top" alt="Product Image">
+              {{ end }}
+            </div>
+            {{ end }}
+            <div class="card-body p-4">
+              <h4 class="card-title text-primary fw-bold">{{ .Title }}</h4>
+              {{ with .Params.model }}
+              <p class="text-muted small mb-2">Model: {{ . }}</p>
+              {{ end }}
+              <p class="card-text text-black-61">{{ .Summary | plainify }}</p>
+              {{ with .Params.price }}
+              <p class="fs-4 fw-bold text-primary mt-3">{{ . }}</p>
+              {{ end }}
+            </div>
+            <div class="card-footer bg-transparent border-0 p-4 pt-0">
+              <a href="{{ .Permalink }}" class="btn btn-outline-primary w-100 mb-2">View Details</a>
+              {{ $subject := printf "Order Inquiry: %s" .Title }}
+              {{ $body := printf "I would like to order:\n\nProduct: %s\nModel: %s\nPrice: %s\n\n---\nMy details:\nName: \nCompany: \nPhone: \n" .Title .Params.model .Params.price }}
+              <a href="mailto:{{ index site.Params.contact 0 }}?subject={{ $subject | urlquery }}&body={{ $body | urlquery }}" class="btn btn-primary w-100">
+                Order Now
+              </a>
+            </div>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+{{ end }}

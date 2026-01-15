@@ -12,6 +12,10 @@ $secondary: #93A8AC;
 $danger: #FF87B0;
 $light: #FFFFFF;
 
+// Ensure button text is readable
+$btn-color: #FFFFFF;
+$btn-primary-color: #FFFFFF;
+
 // scss-docs-start import-stack
 // Configuration
 @import "../../bootstrap/scss/functions";

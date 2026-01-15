@@ -1,39 +1,27 @@
-# enabled: true
-# id: "portfolio"
+enabled: true
+id: "portfolio"
 
-# content:
-#   - image: "images/portfolio-ecommerce.png"
-#     pretitle: "Portfolio Service"
-#     title: "We developed an eCommerce website"
-#     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed euismod quis sit gravida pharetra sit. Cursus vel enim pretium vulputate semper sem elit magna neque. Aliquet adipisc."
+content:
+  - image: "images/portfolio-fishprocessing.jpg"
+    pretitle: "Case Study"
+    title: "Fish Processing Automation"
+    text: "Complete automation overhaul for a leading Icelandic fish processing plant. Integrated PLC systems, real-time monitoring, and predictive maintenance reduced downtime by 40% and increased throughput by 25%."
+    buttons:
+      - label: "View details"
+        url: "#"
 
-#     buttons: 
-#       - label: "See live"
-#         url: "#"
+  - image: "images/portfolio-manufacturing.jpg"
+    pretitle: "Case Study"
+    title: "Smart Manufacturing Line"
+    text: "Designed and implemented a fully automated production line with EtherCAT-based motion control, vision inspection systems, and seamless ERP integration. Achieved 99.2% quality rate with zero manual intervention."
+    buttons:
+      - label: "View details"
+        url: "#"
 
-#       - label: "Read more"
-#         url: "#"
-
-#   - image: "images/portfolio-ecommerce.png"
-#     pretitle: "Portfolio Service"
-#     title: "We developed an eCommerce website"
-#     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed euismod quis sit gravida pharetra sit. Cursus vel enim pretium vulputate semper sem elit magna neque. Aliquet adipisc."
-
-#     buttons: 
-#       - label: "See live"
-#         url: "#"
-
-#       - label: "Read more"
-#         url: "#"
-
-#   - image: "images/portfolio-ecommerce.png"
-#     pretitle: "Portfolio Service"
-#     title: "We developed an eCommerce website"
-#     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed euismod quis sit gravida pharetra sit. Cursus vel enim pretium vulputate semper sem elit magna neque. Aliquet adipisc."
-
-#     buttons: 
-#       - label: "See live"
-#         url: "#"
-
-#       - label: "Read more"
-#         url: "#"
+  - image: "images/portfolio-energy.jpg"
+    pretitle: "Case Study"
+    title: "Geothermal Plant Control System"
+    text: "Modernized SCADA and control systems for a geothermal power facility. Custom HMI development provided operators with intuitive dashboards and real-time analytics for optimal plant performance."
+    buttons:
+      - label: "View details"
+        url: "#"

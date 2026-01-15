@@ -2,14 +2,13 @@ enabled: true
 id: "hero"
 
 content:
-  title: "Bringing your technical needs to life"
-  text: "Versatile team of engineers ready to help you with your next project or current one."
+  title: "Industrial Automation **Done Right**"
+  text: "From PLC programming to complete system integration — we bring decades of combined experience to every project. Based in Iceland, delivering worldwide."
 
   buttonPrimary:
-    label: "What we do"
+    label: "Our Services"
     url: "#services"
 
   buttonSecondary:
-    label: "Let's talk"
-    url: "mailto: centroid@centroid.is"
-
+    label: "Start a Project"
+    url: "mailto:centroid@centroid.is"

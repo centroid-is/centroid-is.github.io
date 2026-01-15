@@ -1,0 +1,44 @@
+<section class="section products-showcase py-5">
+  <div class="container">
+    <div class="row justify-content-center pb-4">
+      <div class="col-12 col-xl-8 text-center">
+        {{ with .content.title }}
+          <h3 class="fs-1 fw-bold text-primary pb-3">{{ . }}</h3>
+        {{ end }}
+        {{ with .content.text }}
+          <p class="text-black-61 fs-5 pb-3">{{ . }}</p>
+        {{ end }}
+      </div>
+    </div>
+    <div class="row g-4 pb-4">
+      {{ range .content.featured }}
+      <div class="col-12 col-md-4">
+        <div class="card bg-secondary-16 border-0 border-radius-34 p-4 h-100 text-center product-showcase-card">
+          <div class="card-body">
+            <div class="product-icon mb-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="text-primary" viewBox="0 0 16 16">
+                <path d="M5 0a.5.5 0 0 1 .5.5V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2A2.5 2.5 0 0 1 14 4.5h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14a2.5 2.5 0 0 1-2.5 2.5v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14A2.5 2.5 0 0 1 2 11.5H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2A2.5 2.5 0 0 1 4.5 2V.5A.5.5 0 0 1 5 0zm-.5 3A1.5 1.5 0 0 0 3 4.5v7A1.5 1.5 0 0 0 4.5 13h7a1.5 1.5 0 0 0 1.5-1.5v-7A1.5 1.5 0 0 0 11.5 3h-7zM5 6.5A1.5 1.5 0 0 1 6.5 5h3A1.5 1.5 0 0 1 11 6.5v3A1.5 1.5 0 0 1 9.5 11h-3A1.5 1.5 0 0 1 5 9.5v-3zM6.5 6a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z"/>
+              </svg>
+            </div>
+            <h5 class="card-title fw-bold text-primary mb-2">{{ .title }}</h5>
+            <p class="card-text text-black-61 mb-3">{{ .description }}</p>
+            <p class="fs-4 fw-bold text-primary mb-0">{{ .price }}</p>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-12 text-center">
+        {{ with .content.button }}
+          <a class="btn btn-primary btn-lg px-5 py-3 text-light" href="{{ .url }}">
+            {{ .label }}
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="ms-2" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+            </svg>
+          </a>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>

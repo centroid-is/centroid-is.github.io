@@ -1,7 +1,76 @@
 .section.portfolio {
-  .portfolio-feature:nth-child(odd) {
-    @media (min-width: 1200px) {
-      flex-direction: row-reverse;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+
+  .portfolio-feature {
+    padding: 3rem 0;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid rgba(147, 168, 172, 0.2);
+
+    &:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+    }
+
+    &:nth-child(odd) {
+      @media (min-width: 1200px) {
+        flex-direction: row-reverse;
+      }
+    }
+
+    // Image column
+    > div:first-child {
+      position: relative;
+      overflow: hidden;
+      border-radius: 1.5rem;
+
+      img {
+        transition: transform 0.5s ease;
+        border-radius: 1.5rem;
+      }
+
+      &:hover img {
+        transform: scale(1.05);
+      }
+
+      // Decorative element
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -20px;
+        right: -20px;
+        width: 100px;
+        height: 100px;
+        background: linear-gradient(135deg, var(--bs-secondary) 0%, transparent 70%);
+        border-radius: 50%;
+        opacity: 0.3;
+        z-index: -1;
+      }
+    }
+
+    // Content column
+    > div:last-child {
+      padding: 2rem;
+
+      @media (min-width: 1200px) {
+        padding: 2rem 3rem;
+      }
+    }
+
+    .text-danger {
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      font-size: 0.85rem;
+    }
+
+    a {
+      font-weight: 600;
+      transition: all 0.3s ease;
+
+      &:hover {
+        color: var(--bs-primary);
+        padding-left: 0.5rem;
+      }
     }
   }
 }

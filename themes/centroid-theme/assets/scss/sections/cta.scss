@@ -1,0 +1,58 @@
+.section.cta {
+  background: linear-gradient(135deg, rgba(11, 19, 32, 0.03) 0%, rgba(147, 168, 172, 0.1) 100%);
+  border-radius: 2rem;
+  margin: 3rem 1rem;
+  padding: 5rem 2rem;
+  position: relative;
+  overflow: hidden;
+
+  // Decorative circles
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.1;
+  }
+
+  &::before {
+    top: -50px;
+    left: -50px;
+    width: 200px;
+    height: 200px;
+    border: 3px solid var(--bs-primary);
+  }
+
+  &::after {
+    bottom: -30px;
+    right: -30px;
+    width: 150px;
+    height: 150px;
+    background: var(--bs-secondary);
+  }
+
+  h3 {
+    position: relative;
+    z-index: 1;
+  }
+
+  p {
+    position: relative;
+    z-index: 1;
+  }
+
+  .btn {
+    position: relative;
+    z-index: 1;
+    font-size: 1.1rem;
+    letter-spacing: 0.02em;
+
+    svg {
+      transition: transform 0.3s ease;
+    }
+
+    &:hover svg {
+      transform: translateX(5px);
+    }
+  }
+}
